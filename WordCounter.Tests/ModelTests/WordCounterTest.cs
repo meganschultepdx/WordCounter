@@ -8,12 +8,12 @@ namespace WordCounterTests
   {
 
     [TestMethod]
-    public void WordCounterMethod_CheckForNonAlphaCharacters_False()
+    public void WordCounterMethod_KeyWordSave_true()
     {
-    //   Item newItem = new Item("test");
-    //   Assert.AreEqual(typeof(Item), newItem.GetType());
-    // }
-    //
+      WordCounter testWordCounter = new WordCounter();
+      Assert.AreEqual(true, testWordCounter.WordCounterMethod("userInput"));
+    }
+
     // [TestMethod]
     // public void GetDescription_ReturnsDescription_String()
     // {
@@ -27,6 +27,5 @@ namespace WordCounterTests
     //   //Assert
     //   Assert.AreEqual(description, result);
     // }
-}
   }
 }

@@ -6,12 +6,13 @@ namespace WordCounterModels
   public class WordCounter
   {
 
-    public bool WordCounterMethod(string userWord, string userSentance)
+    public bool WordCounterMethod(string userWord)
     {
     // properties, methods, etc. will go here.
-    return false;
+      return false;
     }
 
 
   }
+
 }
