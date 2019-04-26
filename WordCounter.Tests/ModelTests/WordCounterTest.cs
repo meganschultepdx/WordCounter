@@ -11,16 +11,16 @@ namespace WordCounterTests
     [TestMethod]
     public void WordCounter_UserKeyWordUserSentenceProperties_True()
     {
-      WordCounter testUserInput = new WordCounter("rad", "I went to a bookstore");
-      Assert.AreEqual(typeof(WordCounter), testUserInput.GetWord());
+      WordCounter testUserInput = new WordCounter("rad", "I went to a bookstore.");
+      Assert.AreEqual(typeof(WordCounter), testUserInput.GetType());
     }
-
-    [TestMethod]
-    public void WordCounter_UserKeyWordUserSentenceSave_()
-    {
-      WordCounter testUserInputs = new WordCounter("rad");
-      Assert.AreEqual("rad", testInputs.GetWord("rad"));
-    }
+    //
+    // [TestMethod]
+    // public void WordCounter_UserKeyWordUserSentenceSave_()
+    // {
+    //   WordCounter testUserInputs = new WordCounter("rad");
+    //   Assert.AreEqual("rad", testInputs.GetWord("rad"));
+    // }
 
     // [TestMethod]
     // public void GetDescription_ReturnsDescription_String()
