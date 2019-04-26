@@ -6,7 +6,7 @@
 
 ## Description
 
-This web applicaton will gather a word and a sentance from a user and will then check how frequently the word appears in the sentence. It will check for full word matches only. It's the coolest app you will ever come across. 😎.
+This web applicaton will gather a word and a sentance from a user and will then check how frequently the word appears in the sentence. It will check for full word matches only. It's the coolest app you will ever come across 😎
 
 ## Setup/Installation Requirements
 
