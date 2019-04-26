@@ -5,12 +5,21 @@ namespace WordCounterModels
 {
   public class WordCounter
   {
+    private string _userKeyWord;
+    private string _userSentence;
 
-    public bool WordCounterMethod(string userWord)
+    public string WordCounterContructor(string userKeyWord, string userSentence)
     {
-    // properties, methods, etc. will go here.
-      return false;
+      _userKeyWord = userKeyWord;
+      _userSentence = userSentence;
     }
+
+  public string GetWord()
+    {
+      return _userKeyWord;
+      return _userSentence;
+    }
+
 
 
   }

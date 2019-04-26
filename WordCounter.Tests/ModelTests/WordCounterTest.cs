@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using System;
 using WordCounterModels;
 
 namespace WordCounterTests
@@ -6,12 +8,18 @@ namespace WordCounterTests
   [TestClass]
   public class WordCounterTests
   {
+    [TestMethod]
+    public void WordCounter_UserKeyWordUserSentenceProperties_True()
+    {
+      WordCounter testUserInput = new WordCounter("rad", "I went to a bookstore");
+      Assert.AreEqual(typeof(WordCounter), testUserInput.GetWord());
+    }
 
     [TestMethod]
-    public void WordCounterMethod_KeyWordSave_true()
+    public void WordCounter_UserKeyWordUserSentenceSave_()
     {
-      WordCounter testWordCounter = new WordCounter();
-      Assert.AreEqual(true, testWordCounter.WordCounterMethod("userInput"));
+      WordCounter testUserInputs = new WordCounter("rad");
+      Assert.AreEqual("rad", testInputs.GetWord("rad"));
     }
 
     // [TestMethod]
