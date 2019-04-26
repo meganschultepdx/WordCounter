@@ -14,7 +14,17 @@ namespace WordCounterModels
     _userKeyWord = userKeyWord;
     _userSentence = userSentence;
   }
-  
+
+  public string GetUserKeyWord()
+  {
+    return _userKeyWord;
+  }
+
+  // public string GetUserSentance()
+  // {
+  //   return _userSentence;
+  // }
+
   }
 }
 
