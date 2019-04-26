@@ -25,7 +25,7 @@ namespace WordCounterModels
     return _userSentence;
   }
 
-  public string WordCounter ()
+  // public string WordCounter ()
 
   }
 }

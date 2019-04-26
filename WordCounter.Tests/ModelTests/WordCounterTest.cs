@@ -23,26 +23,26 @@ namespace WordCounterTests
     {
       //Arrange
       string userKeyWord = "rad";
-      WordCounter newKeyWord = new WordCounter(userKeyWord);
+      WordCounter newKeyWord = new WordCounter(userKeyWord, "test sentence");
 
       //Act
       string result = newKeyWord.GetUserKeyWord();
 
       //Assert
-      Assert.AreEqual("rad", NewKeyWord);
+      Assert.AreEqual(userKeyWord, result);
     }
 
     [TestMethod]
     public void WordCounter_UserSentenceGet_string()
     {
       //Arrange
-
-
+      string userSentence = "I went to a bookstore.";
+      WordCounter newSentence = new WordCounter("text", userSentence);
       //Act
-      WordCounter NewSentence = new WordCounter("I went to a bookstore.");
+      string sentenceResult = newSentence.GetUserSentence();
 
       //Assert
-      Assert.AreEqual("I went to a bookstore.", NewSentence);
+      Assert.AreEqual(userSentence, sentenceResult);
     }
 
     // [TestMethod]
