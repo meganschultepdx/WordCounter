@@ -1,6 +1,6 @@
-namespace ToDoList.Models
+namespace WordCounterModels
 {
-  public class Item
+  public class WordCounterTests
   {
 
     // properties, methods, etc. will go here.

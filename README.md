@@ -6,26 +6,23 @@
 
 ## Description
 
-This web applicaton will gather a word and a sentance from a user and will then check how frequently the word appears in the sentence. It will check for full word matches only. for maximum 😎.
+This web applicaton will gather a word and a sentance from a user and will then check how frequently the word appears in the sentence. It will check for full word matches only. It's the coolest app you will ever come across. 😎.
 
 ## Setup/Installation Requirements
 
-* Make a clone from GitHub at: https://github.com/meganschultepdx/fp-panuccisPizza.git
+* Make a clone from GitHub at: https://github.com/meganschultepdx/fp-word-counter.git
 * Open in Atom or similar text editor to view code
-* open .html file in browser for web view
-* you can test functionality in the browser by selecting pizza size and base topping from the drop-downs and adding any additional toppings.
-* you should receive a prompt with the total cost of your pizza.
+* No UI has been added at this time, however you should be able to run dotnet test in the console.
 
 ## Specs
 
 |Objectives|example input|example output|
 |-|-|-|
 |Return nothing if not a alpha char.| #$ | #$ |
-|It will replace 'e' with '3' and print it to screen|Eater|3at3r|
-|It will replace 'o' with '0' and print it to screen|Oh crap|0h crap|
-|It will replace capital 'L' with '1' and print it to screen|Little idiot|1ittle idiot|
-|It will replace 't' with '7' and print it to screen|Eater|3at3r|
-|It will replace 's' with 'z' unless its the first char of the string and print it to screen|Sucks|Suckz|
+|Return 0 if user's word does not appear in sentance.| "rad","I went to the bookstore." | 0 |
+|Return 1 if user sentence is single word that matches user's word.|"rad", "rad."|1|
+|Return 1 if user's word appears once in sentence longer than one word.|"rad", "I wen't to a rad bookstore."| 1 |
+|Return total number of times user's word appears in user sentence if more than once.|"rad", "I went to a rad bookstore full of rad books."| 2 |
 
 
 ## Known Bugs
