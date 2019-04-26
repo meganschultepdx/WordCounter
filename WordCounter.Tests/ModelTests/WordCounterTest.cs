@@ -22,28 +22,27 @@ namespace WordCounterTests
     public void WordCounter_UserKeyWordGet_string()
     {
       //Arrange
-      // string UserKeyWord = "rad";
-      WordCounter NewKeyWord = new WordCounter("rad");
+      string userKeyWord = "rad";
+      WordCounter newKeyWord = new WordCounter(userKeyWord);
 
       //Act
-      string result = NewKeyWord.GetUserKeyWord();
+      string result = newKeyWord.GetUserKeyWord();
 
       //Assert
-      Assert.AreEqual("rad", result);
+      Assert.AreEqual("rad", NewKeyWord);
     }
 
     [TestMethod]
     public void WordCounter_UserSentenceGet_string()
     {
       //Arrange
-      // string UserKeyWord = "rad";
-      WordCounter NewKeyWord = new WordCounter("rad");
+
 
       //Act
-      string result = NewKeyWord.GetUserKeyWord();
+      WordCounter NewSentence = new WordCounter("I went to a bookstore.");
 
       //Assert
-      Assert.AreEqual("rad", result);
+      Assert.AreEqual("I went to a bookstore.", NewSentence);
     }
 
     // [TestMethod]

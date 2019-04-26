@@ -20,10 +20,12 @@ namespace WordCounterModels
     return _userKeyWord;
   }
 
-  // public string GetUserSentance()
-  // {
-  //   return _userSentence;
-  // }
+  public string GetUserSentence()
+  {
+    return _userSentence;
+  }
+
+  public string WordCounter ()
 
   }
 }
