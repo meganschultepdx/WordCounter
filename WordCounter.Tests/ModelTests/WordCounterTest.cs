@@ -55,7 +55,7 @@ namespace WordCounterTests
       string[] sentenceArray = newSentence.SentenceToArray(userSentence);
 
       //Assert
-      Assert.AreEqual("sux", sentenceArray[3]);
+      Assert.AreEqual("sux.", sentenceArray[3]);
     }
 
 

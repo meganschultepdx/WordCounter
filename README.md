@@ -18,8 +18,7 @@ This web applicaton will gather a word and a sentance from a user and will then 
 
 |Objectives|example input|example output|
 |-|-|-|
-|Sets user inputted word and sentence as variables| "rad","I went to a bookstore." |  |
-|Return 0 if user's word does not appear in sentance.| "rad","I went to the bookstore." | 0 |
+|Return 0 if user's word does not appear in sentence.| "rad","I went to the bookstore." | 0 |
 |Return 1 if user sentence is single word that matches user's word.|"rad", "rad."|1|
 |Return 1 if user's word appears once in sentence longer than one word.|"rad", "I wen't to a rad bookstore."| 1 |
 |Return total number of times user's word appears in user sentence if more than once.|"rad", "I went to a rad bookstore full of rad books."| 2 |
