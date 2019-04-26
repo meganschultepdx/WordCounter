@@ -11,7 +11,7 @@ namespace WordCounterModels
 
   public WordCounter (string userKeyWord, string userSentence)
   {
-    _userKeyWord = userKeyWord;
+    _userKeyWord = userKeyWord.ToLower();
     _userSentence = userSentence;
   }
 
@@ -30,10 +30,15 @@ namespace WordCounterModels
     string lowerCaseSentence = userSentence.ToLower();
     string[] sentenceArray = lowerCaseSentence.Split(' ');
     return sentenceArray;
-
-  ;
-
   }
+
+  // public int WordCountTotal(string userKeyWord, string userSentence)
+  // {
+  //   int count = 0;
+  //
+  //   return count;
+  //
+  // }
 
   }
 }

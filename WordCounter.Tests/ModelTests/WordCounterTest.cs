@@ -22,14 +22,14 @@ namespace WordCounterTests
     public void WordCounter_UserKeyWordGet_string()
     {
       //Arrange
-      string userKeyWord = "rad";
+      string userKeyWord = "RaD";
       WordCounter newKeyWord = new WordCounter(userKeyWord, "test sentence");
 
       //Act
       string result = newKeyWord.GetUserKeyWord();
 
       //Assert
-      Assert.AreEqual(userKeyWord, result);
+      Assert.AreEqual("rad", result);
     }
 
     [TestMethod]
@@ -46,7 +46,7 @@ namespace WordCounterTests
     }
 
     [TestMethod]
-    public void WordCounter_UserSentenceToArray_true()
+    public void WordCounter_UserSentenceToLowerCaseArray_true()
     {
       //Arrange
       string userSentence = "This day really Sux.";
@@ -57,6 +57,20 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual("sux.", sentenceArray[3]);
     }
+
+    // [TestMethod]
+    // public void WordCounter_UserKeyWordToLowercase_string()
+    // {
+    //   //Arrange
+    //   string userKeyWord = "rad";
+    //   WordCounter newKeyWord = new WordCounter(userKeyWord, "test sentence");
+    //
+    //   //Act
+    //   string lowerCaseWord = newKeyWord.WordCountTotal(userKeyword);
+    //
+    //   //Assert
+    //   Assert.AreEqual("rad", lowerCaseWord);
+    // }
 
 
 
