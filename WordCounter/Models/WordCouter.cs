@@ -25,11 +25,11 @@ namespace WordCounterModels
     return _userSentence;
   }
 
-  public string[] SentanceToArray(string userSentence)
+  public string[] SentenceToArray(string userSentence)
   {
-    // string userSentence = new userSentence();
     string[] sentenceArray = userSentence.Split(' ');
     return sentenceArray;
+  ;
 
   }
 
@@ -40,11 +40,6 @@ namespace WordCounterModels
 
 
 
-//   public string GetWord()
-//     {
-//       return _userKeyWord;
-//       return _userSentence;
-//     }
 //
 //   public string SetWord(string newUserKeyWord, newUserSentence)
 //   {

@@ -46,31 +46,20 @@ namespace WordCounterTests
     }
 
     [TestMethod]
-    public void WordCounter_UserSentenceToArray_array()
+    public void WordCounter_UserSentenceToArray_true()
     {
       //Arrange
-      string userSentence = "I went to a bookstore.";
-      SentenceToArray newSentence = new SentenseToArray(userSentence);
+      string userSentence = "This day really sux.";
+      WordCounter newSentence = new WordCounter("text", userSentence);
       //Act
-      string[] sentenceArray = newSentence.SentenceToArray();
+      string[] sentenceArray = newSentence.SentenceToArray(userSentence);
 
       //Assert
-      Assert.AreEqual(userSentence, sentenceArray);
+      Assert.AreEqual("sux", sentenceArray[3]);
     }
 
 
-    // [TestMethod]
-    // public void GetDescription_ReturnsDescription_String()
-    // {
-    //   //Arrange
-    //   string description = "Walk the dog.";
-    //   Item newItem = new Item(description);
-    //
-    //   //Act
-    //   string result = newItem.GetDescription();
-    //
-    //   //Assert
-    //   Assert.AreEqual(description, result);
-    // }
+
+
   }
 }
