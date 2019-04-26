@@ -25,7 +25,13 @@ namespace WordCounterModels
     return _userSentence;
   }
 
-  // public string WordCounter ()
+  public string[] SentanceToArray(string userSentence)
+  {
+    // string userSentence = new userSentence();
+    string[] sentenceArray = userSentence.Split(' ');
+    return sentenceArray;
+
+  }
 
   }
 }
