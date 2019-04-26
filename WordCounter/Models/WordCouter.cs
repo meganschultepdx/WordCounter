@@ -27,8 +27,10 @@ namespace WordCounterModels
 
   public string[] SentenceToArray(string userSentence)
   {
-    string[] sentenceArray = userSentence.Split(' ');
+    string lowerCaseSentence = userSentence.ToLower();
+    string[] sentenceArray = lowerCaseSentence.Split(' ');
     return sentenceArray;
+
   ;
 
   }

@@ -49,7 +49,7 @@ namespace WordCounterTests
     public void WordCounter_UserSentenceToArray_true()
     {
       //Arrange
-      string userSentence = "This day really sux.";
+      string userSentence = "This day really Sux.";
       WordCounter newSentence = new WordCounter("text", userSentence);
       //Act
       string[] sentenceArray = newSentence.SentenceToArray(userSentence);
