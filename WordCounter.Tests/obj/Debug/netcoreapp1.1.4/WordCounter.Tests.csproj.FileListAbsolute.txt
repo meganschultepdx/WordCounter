@@ -1,0 +1,5 @@
+/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/bin/Debug/netcoreapp1.1.4/WordCounter.Tests.deps.json
+/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/bin/Debug/netcoreapp1.1.4/WordCounter.Tests.runtimeconfig.json
+/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/bin/Debug/netcoreapp1.1.4/WordCounter.Tests.runtimeconfig.dev.json
+/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.csproj.CoreCompileInputs.cache
+/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.AssemblyInfo.cs
