@@ -32,31 +32,14 @@ namespace WordCounterModels
     return sentenceArray;
   }
 
-  // public int WordCountTotal(string userKeyWord, string userSentence)
-  // {
-  //   int count = 0;
-  //
-  //   return count;
-  //
-  // }
+  public int WordCountTotal()
+  {
+    int count = 0;
+    foreach (var userKeyWord in sentanceArray)
+
+    return count;
+
+  }
 
   }
 }
-
-
-
-
-
-//
-//   public string SetWord(string newUserKeyWord, newUserSentence)
-//   {
-//       _userKeyWord = newUserKeyWord;
-//       _userSentence = newUserSentence;
-// }
-//   public string WordCounterCheck(string newUserKeyWord, newUserSentence)
-//   {
-//     string [] sentenceArray = userSentence.split();
-//
-//   }
-
-//

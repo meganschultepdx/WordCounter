@@ -57,23 +57,5 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual("sux.", sentenceArray[3]);
     }
-
-    // [TestMethod]
-    // public void WordCounter_UserKeyWordToLowercase_string()
-    // {
-    //   //Arrange
-    //   string userKeyWord = "rad";
-    //   WordCounter newKeyWord = new WordCounter(userKeyWord, "test sentence");
-    //
-    //   //Act
-    //   string lowerCaseWord = newKeyWord.WordCountTotal(userKeyword);
-    //
-    //   //Assert
-    //   Assert.AreEqual("rad", lowerCaseWord);
-    // }
-
-
-
-
   }
 }
