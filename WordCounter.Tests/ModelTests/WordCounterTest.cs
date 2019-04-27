@@ -49,27 +49,29 @@ namespace WordCounterTests
     public void WordCounter_UserSentenceToLowerCaseArray_true()
     {
       //Arrange
-      string userSentence = "This day really Sux.";
+      string userSentence = "This day really Sux!";
       WordCounter newSentence = new WordCounter("text", userSentence);
       //Act
       string[] sentenceArray = newSentence.SentenceToArray(userSentence);
 
       //Assert
-      Assert.AreEqual("sux.", sentenceArray[3]);
+      Assert.AreEqual("sux", sentenceArray[3]);
     }
-    // //new test method to put both functions togther
-    // [TestMethod]
-    // public void WordCounter_CountUserKeyWordInArray_int()
-    // {
-    //   //Arrange
-    //   string userSentence = "This day really Sux.";
-    //   WordCounter newSentence = new WordCounter("text", userSentence);
-    //   //Act
-    //   string[] sentenceArray = newSentence.SentenceToArray(userSentence);
-    //
-    //   //Assert
-    //   Assert.AreEqual("sux.", sentenceArray[3]);
-    // }
+
+    //new test method to put both functions togther
+    [TestMethod]
+    public void WordCounter_CountUserKeyWordInArray_int()
+    {
+      //Arrange
+      // string userKeyWord = "day";
+      // string userSentence = "This day really Sux.";
+      // WordCounter newSentence = new WordCounter(userKeyWord, userSentence);
+      //Act
+      int count = wordCounter.WordCountTotal("day", "This day really Sux!");
+
+      //Assert
+      Assert.AreEqual(1, count;)
+    }
 
   }
 }
