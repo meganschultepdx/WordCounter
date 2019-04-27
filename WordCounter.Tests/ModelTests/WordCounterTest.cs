@@ -58,20 +58,53 @@ namespace WordCounterTests
       Assert.AreEqual("sux", sentenceArray[3]);
     }
 
-    //new test method to put both functions togther
+    //test for 0 occurances
     [TestMethod]
-    public void WordCounter_CountUserKeyWordInArray_int()
+    public void WordCounter_CountUserKeyWordInArrayZero_int()
     {
       //Arrange
-      // string userKeyWord = "day";
-      // string userSentence = "This day really Sux.";
-      // WordCounter newSentence = new WordCounter(userKeyWord, userSentence);
+      WordCounter newWordCounter = new WordCounter("day", "This milk really sux!");
+      string userKeyWord = newWordCounter.GetUserKeyWord();
+      string userSentence = newWordCounter.GetUserSentence();
+      string[] userArray = newWordCounter.SentenceToArray(userSentence);
+
       //Act
-      int count = wordCounter.WordCountTotal("day", "This day really Sux!");
+      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
 
       //Assert
-      Assert.AreEqual(1, count;)
+      Assert.AreEqual(0, count);
     }
+    //test for one occurance
+    [TestMethod]
+    public void WordCounter_CountUserKeyWordInArrayOne_int()
+    {
+      //Arrange
+      WordCounter newWordCounter = new WordCounter("day", "This day really sux!");
+      string userKeyWord = newWordCounter.GetUserKeyWord();
+      string userSentence = newWordCounter.GetUserSentence();
+      string[] userArray = newWordCounter.SentenceToArray(userSentence);
 
+      //Act
+      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
+
+      //Assert
+      Assert.AreEqual(1, count);
+    }
+    //Test for 2 occurances
+    [TestMethod]
+    public void WordCounter_CountUserKeyWordInArrayTwo_int()
+    {
+      //Arrange
+      WordCounter newWordCounter = new WordCounter("day", "This day really sux day!");
+      string userKeyWord = newWordCounter.GetUserKeyWord();
+      string userSentence = newWordCounter.GetUserSentence();
+      string[] userArray = newWordCounter.SentenceToArray(userSentence);
+
+      //Act
+      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
+
+      //Assert
+      Assert.AreEqual(2, count);
+    }
   }
 }
