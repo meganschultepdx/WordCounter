@@ -7301,11 +7301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/meganschulte/Desktop/fp-word-counter/WordCounter/WordCounter.csproj",
+      "projectUniqueName": "/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/WordCounter.csproj",
       "projectName": "WordCounter",
-      "projectPath": "/Users/meganschulte/Desktop/fp-word-counter/WordCounter/WordCounter.csproj",
+      "projectPath": "/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/WordCounter.csproj",
       "packagesPath": "/Users/meganschulte/.nuget/packages/",
-      "outputPath": "/Users/meganschulte/Desktop/fp-word-counter/WordCounter/obj/",
+      "outputPath": "/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/meganschulte/.nuget/NuGet/NuGet.Config"

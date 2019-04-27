@@ -1,7 +1,7 @@
-/Users/meganschulte/Desktop/fp-word-counter/WordCounter/bin/Debug/netcoreapp1.1.4/WordCounter.deps.json
-/Users/meganschulte/Desktop/fp-word-counter/WordCounter/bin/Debug/netcoreapp1.1.4/WordCounter.dll
-/Users/meganschulte/Desktop/fp-word-counter/WordCounter/bin/Debug/netcoreapp1.1.4/WordCounter.pdb
-/Users/meganschulte/Desktop/fp-word-counter/WordCounter/obj/Debug/netcoreapp1.1.4/WordCounter.csproj.CoreCompileInputs.cache
-/Users/meganschulte/Desktop/fp-word-counter/WordCounter/obj/Debug/netcoreapp1.1.4/WordCounter.AssemblyInfo.cs
-/Users/meganschulte/Desktop/fp-word-counter/WordCounter/obj/Debug/netcoreapp1.1.4/WordCounter.dll
-/Users/meganschulte/Desktop/fp-word-counter/WordCounter/obj/Debug/netcoreapp1.1.4/WordCounter.pdb
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/bin/Debug/netcoreapp1.1.4/WordCounter.deps.json
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/obj/Debug/netcoreapp1.1.4/WordCounter.csproj.CoreCompileInputs.cache
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/obj/Debug/netcoreapp1.1.4/WordCounter.AssemblyInfo.cs
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/bin/Debug/netcoreapp1.1.4/WordCounter.dll
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/bin/Debug/netcoreapp1.1.4/WordCounter.pdb
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/obj/Debug/netcoreapp1.1.4/WordCounter.dll
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/obj/Debug/netcoreapp1.1.4/WordCounter.pdb

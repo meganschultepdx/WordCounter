@@ -8768,8 +8768,8 @@
     },
     "WordCounter/1.0.0": {
       "type": "project",
-      "path": "../WordCounter/WordCounter.csproj",
-      "msbuildProject": "../WordCounter/WordCounter.csproj"
+      "path": "../WordCounter.Solution/WordCounter.csproj",
+      "msbuildProject": "../WordCounter.Solution/WordCounter.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8787,11 +8787,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectUniqueName": "/Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/WordCounter.Tests.csproj",
       "projectName": "WordCounter.Tests",
-      "projectPath": "/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectPath": "/Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/WordCounter.Tests.csproj",
       "packagesPath": "/Users/meganschulte/.nuget/packages/",
-      "outputPath": "/Users/meganschulte/Desktop/fp-word-counter/WordCounter.Tests/obj/",
+      "outputPath": "/Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/meganschulte/.nuget/NuGet/NuGet.Config"
@@ -8805,8 +8805,8 @@
       "frameworks": {
         "netcoreapp1.1.4": {
           "projectReferences": {
-            "/Users/meganschulte/Desktop/fp-word-counter/WordCounter/WordCounter.csproj": {
-              "projectPath": "/Users/meganschulte/Desktop/fp-word-counter/WordCounter/WordCounter.csproj"
+            "/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/WordCounter.csproj": {
+              "projectPath": "/Users/meganschulte/Desktop/WordCounter/WordCounter.Solution/WordCounter.csproj"
             }
           }
         }

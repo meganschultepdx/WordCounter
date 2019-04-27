@@ -57,5 +57,19 @@ namespace WordCounterTests
       //Assert
       Assert.AreEqual("sux.", sentenceArray[3]);
     }
+    // //new test method to put both functions togther
+    // [TestMethod]
+    // public void WordCounter_CountUserKeyWordInArray_int()
+    // {
+    //   //Arrange
+    //   string userSentence = "This day really Sux.";
+    //   WordCounter newSentence = new WordCounter("text", userSentence);
+    //   //Act
+    //   string[] sentenceArray = newSentence.SentenceToArray(userSentence);
+    //
+    //   //Assert
+    //   Assert.AreEqual("sux.", sentenceArray[3]);
+    // }
+
   }
 }

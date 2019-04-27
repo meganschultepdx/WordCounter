@@ -1,4 +1,4 @@
-# fp-word-counter
+# WordCounter
 
 #### A Word Counter C# Application, 4-26-2019
 

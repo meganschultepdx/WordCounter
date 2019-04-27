@@ -32,14 +32,18 @@ namespace WordCounterModels
       return sentenceArray;
     }
 
-    public int WordCountTotal()
-    {
-      int count = 0;
-      foreach (var userKeyWord in sentanceArray)
-
-      return count;
-
-    }
-
+    // public int WordCountTotal(string userKeyWord, string userSentence)
+    // {
+    //   int count = 0;
+    //   string lowerCaseSentence = userSentence.ToLower();
+    //   string[] sentenceArray = lowerCaseSentence.Split(' ');
+    //
+    //   foreach (string userKeyWord in sentanceArray)
+    //   {
+    //     count += 1;
+    //   }
+    //
+    //   return count;
+    
   }
 }
