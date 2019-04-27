@@ -9,37 +9,37 @@ namespace WordCounterModels
     private string _userSentence;
 
 
-  public WordCounter (string userKeyWord, string userSentence)
-  {
-    _userKeyWord = userKeyWord.ToLower();
-    _userSentence = userSentence;
-  }
+    public WordCounter (string userKeyWord, string userSentence)
+    {
+      _userKeyWord = userKeyWord.ToLower();
+      _userSentence = userSentence;
+    }
 
-  public string GetUserKeyWord()
-  {
-    return _userKeyWord;
-  }
+    public string GetUserKeyWord()
+    {
+      return _userKeyWord;
+    }
 
-  public string GetUserSentence()
-  {
-    return _userSentence;
-  }
+    public string GetUserSentence()
+    {
+      return _userSentence;
+    }
 
-  public string[] SentenceToArray(string userSentence)
-  {
-    string lowerCaseSentence = userSentence.ToLower();
-    string[] sentenceArray = lowerCaseSentence.Split(' ');
-    return sentenceArray;
-  }
+    public string[] SentenceToArray(string userSentence)
+    {
+      string lowerCaseSentence = userSentence.ToLower();
+      string[] sentenceArray = lowerCaseSentence.Split(' ');
+      return sentenceArray;
+    }
 
-  public int WordCountTotal()
-  {
-    int count = 0;
-    foreach (var userKeyWord in sentanceArray)
+    public int WordCountTotal()
+    {
+      int count = 0;
+      foreach (var userKeyWord in sentanceArray)
 
-    return count;
+      return count;
 
-  }
+    }
 
   }
 }
