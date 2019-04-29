@@ -46,7 +46,7 @@ namespace WordCounterTests
     }
 
     [TestMethod]
-    public void SentenceToArray_UserSentenceToLowerCaseArray_true()
+    public void SentenceToArray_UserSentenceToLowerCaseArray_True()
     {
       //Arrange
       string userSentence = "This day really Sux!";
@@ -60,7 +60,7 @@ namespace WordCounterTests
 
     //test for 0 occurances
     [TestMethod]
-    public void WordCountTotal_CountUserKeyWordInArrayZero_int()
+    public void WordCountTotal_CountUserKeyWordInArrayZero_True()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This milk really sux!");
@@ -76,7 +76,7 @@ namespace WordCounterTests
     }
     //test for one occurance
     [TestMethod]
-    public void WordCountTotal_CountUserKeyWordInArrayOne_int()
+    public void WordCountTotal_CountUserKeyWordInArrayOne_True()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This day really sux!");
@@ -92,7 +92,7 @@ namespace WordCounterTests
     }
     //Test for 2 occurances
     [TestMethod]
-    public void WordCountTotal_CountUserKeyWordInArrayTwo_int()
+    public void WordCountTotal_CountUserKeyWordInArrayTwo_True()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This day really sux day!");
