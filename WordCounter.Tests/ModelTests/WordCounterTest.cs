@@ -19,7 +19,7 @@ namespace WordCounterTests
     }
 
     [TestMethod]
-    public void WordCounter_UserKeyWordGet_string()
+    public void GetUserKeyWord_UserKeyWordGet_True()
     {
       //Arrange
       string userKeyWord = "RaD";
@@ -33,7 +33,7 @@ namespace WordCounterTests
     }
 
     [TestMethod]
-    public void WordCounter_UserSentenceGet_string()
+    public void GetUserSentence_UserSentenceGet_True()
     {
       //Arrange
       string userSentence = "I went to a bookstore.";
@@ -46,7 +46,7 @@ namespace WordCounterTests
     }
 
     [TestMethod]
-    public void WordCounter_UserSentenceToLowerCaseArray_true()
+    public void SentenceToArray_UserSentenceToLowerCaseArray_true()
     {
       //Arrange
       string userSentence = "This day really Sux!";
@@ -60,7 +60,7 @@ namespace WordCounterTests
 
     //test for 0 occurances
     [TestMethod]
-    public void WordCounter_CountUserKeyWordInArrayZero_int()
+    public void WordCountTotal_CountUserKeyWordInArrayZero_int()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This milk really sux!");
@@ -76,7 +76,7 @@ namespace WordCounterTests
     }
     //test for one occurance
     [TestMethod]
-    public void WordCounter_CountUserKeyWordInArrayOne_int()
+    public void WordCountTotal_CountUserKeyWordInArrayOne_int()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This day really sux!");
@@ -92,7 +92,7 @@ namespace WordCounterTests
     }
     //Test for 2 occurances
     [TestMethod]
-    public void WordCounter_CountUserKeyWordInArrayTwo_int()
+    public void WordCountTotal_CountUserKeyWordInArrayTwo_int()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This day really sux day!");
