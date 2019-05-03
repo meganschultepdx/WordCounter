@@ -24,8 +24,6 @@ namespace WordCountMachine.Controllers
     public ActionResult Create(string userKeyWord, string userSentence)
     {
       WordCounter newWordCounter = new WordCounter(userKeyWord, userSentence);
-      newWordCounter.SetUserKeyWord(userKeyWord);
-      newWordCounter.SetUserSentence(userSentence);
       return View(newWordCounter);
     }
 

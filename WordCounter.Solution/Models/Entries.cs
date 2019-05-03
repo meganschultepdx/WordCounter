@@ -15,7 +15,6 @@ namespace WordCountMachine.Models
       UserKeyWord = userKeyWord.ToLower();
       OriginalSentence = userSentence;
       ArraySentence = userSentence.ToLower().Split(' ', '.', '!', '?');
-
       int count = WordCountTotal();
       Count = count;
     }
