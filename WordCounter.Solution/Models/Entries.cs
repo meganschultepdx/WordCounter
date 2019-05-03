@@ -15,7 +15,7 @@ namespace WordCountMachine.Models
       UserKeyWord = userKeyWord.ToLower();
       OriginalSentence = userSentence;
       ArraySentence = userSentence.ToLower().Split(' ', '.', '!', '?');
-      int count = WordCountTotal();
+      int count = WordCountTotal(userKeyWord, ArraySentence);
       Count = count;
     }
 
@@ -34,9 +34,3 @@ namespace WordCountMachine.Models
     }
   }
 }
-// public string[] SentenceToArray(string userSentence)
-// {
-//   string lowerCaseSentence = userSentence.ToLower();
-//   string[] sentenceArray = lowerCaseSentence.Split(' ', '.', '!', '?');
-//   return sentenceArray;
-// }
