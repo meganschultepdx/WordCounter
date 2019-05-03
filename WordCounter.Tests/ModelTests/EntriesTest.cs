@@ -19,94 +19,78 @@ namespace WordCountMachine.Tests
     }
 
     [TestMethod]
-    public void UserKeyWord_UserKeyWordIsLowerCase_String()
+    public void userKeyWord_GetUserKeyWord_String()
     {
-      //Arrange
-      string userKeyWord = "RaD";
-      WordCounter newKeyWord = new WordCounter(userKeyWord, "test sentence");
+      // Arrange
+      WordCounter newUserWord = new WordCounter("RaD", "I am tired.");
 
-      //Act
-      string result = newKeyWord.WordCounter();
+      // Act
+      string testGetWord = newUserWord.UserKeyWord;
 
-      //Assert
-      Assert.AreEqual("rad", result);
+      // Assert
+      Assert.AreEqual("rad", testGetWord);
     }
 
     [TestMethod]
-    // public void GetUserSentence_UserSentenceGet_True()
-    public void GetUserSentence_UserSentenceGet_String()
-    {
-      //Arrange
-      // string userSentence = "I went to a bookstore.";
-      // WordCounter newSentence = new WordCounter("text", userSentence);
-      WordCounter newSentence = new WordCounter("text", "I went to a bookstore.");
-      //Act
-      string sentenceResult = newSentence.WordCounter();
+public void UserSentence_SentenceToLowerArray_True()
+{
+  // Arrange
+  WordCounter newUserSentence = new WordCounter("RaD", "I am fine.");
 
-      //Assert
-      Assert.AreEqual(newSentence, sentenceResult); //still unsure if you put newSentence there, because you can put an array in so? ["I", "went", etc]
-    }
+  // Act
+  string[] testGetSentence = newUserSentence.ArraySentence;
 
+  // Assert
+  Assert.AreEqual("fine", testGetSentence[2]);
+}
+
+    //test for 0 occurances
     [TestMethod]
-    public void WordCounter_UserSentenceToLowerCaseArray_True()
+    public void WordCountTotal_CountUserKeyWordInArrayZero_True()
     {
       //Arrange
-      string userSentence = "This day was fine!";
-      WordCounter arraySentence = new WordCounter("text", userSentence);
+      WordCounter newWordCounter = new WordCounter("day", "This milk really sux!");
+      string userKeyWord = newWordCounter.GetUserKeyWord();
+      string userSentence = newWordCounter.GetUserSentence();
+      string[] arraySentence = newWordCounter.SentenceToArray(userSentence);
+
       //Act
-      string[] arraySentence= newSentence.WordCounter(userSentence);
+      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
 
       //Assert
-      Assert.AreEqual("fine", arraySentense[3]);
+      Assert.AreEqual(0, count);
     }
+    //test for one occurance
+    [TestMethod]
+    public void WordCountTotal_CountUserKeyWordInArrayOne_True()
+    {
+      //Arrange
+      WordCounter newWordCounter = new WordCounter("day", "This day really sux!");
+      string userKeyWord = newWordCounter.GetUserKeyWord();
+      string userSentence = newWordCounter.GetUserSentence();
+      string[] arraySentence = newWordCounter.SentenceToArray(userSentence);
 
-    // //test for 0 occurances
-    // [TestMethod]
-    // public void WordCountTotal_CountUserKeyWordInArrayZero_True()
-    // {
-    //   //Arrange
-    //   WordCounter newWordCounter = new WordCounter("day", "This milk really sux!");
-    //   string userKeyWord = newWordCounter.GetUserKeyWord();
-    //   string userSentence = newWordCounter.GetUserSentence();
-    //   string[] arraySentence = newWordCounter.SentenceToArray(userSentence);
-    //
-    //   //Act
-    //   int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
-    //
-    //   //Assert
-    //   Assert.AreEqual(0, count);
-    // }
-    // //test for one occurance
-    // [TestMethod]
-    // public void WordCountTotal_CountUserKeyWordInArrayOne_True()
-    // {
-    //   //Arrange
-    //   WordCounter newWordCounter = new WordCounter("day", "This day really sux!");
-    //   string userKeyWord = newWordCounter.GetUserKeyWord();
-    //   string userSentence = newWordCounter.GetUserSentence();
-    //   string[] arraySentence = newWordCounter.SentenceToArray(userSentence);
-    //
-    //   //Act
-    //   int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
-    //
-    //   //Assert
-    //   Assert.AreEqual(1, count);
-    // }
-    // //Test for 2 occurances
-    // [TestMethod]
-    // public void WordCountTotal_CountUserKeyWordInArrayTwo_True()
-    // {
-    //   //Arrange
-    //   WordCounter newWordCounter = new WordCounter("day", "This day really sux day!");
-    //   string userKeyWord = newWordCounter.GetUserKeyWord();
-    //   string userSentence = newWordCounter.GetUserSentence();
-    //   string[] userArray = newWordCounter.SentenceToArray(userSentence);
-    //
-    //   //Act
-    //   int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
-    //
-    //   //Assert
-    //   Assert.AreEqual(2, count);
-    // }
+      //Act
+      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
+
+      //Assert
+      Assert.AreEqual(1, count);
+    }
+    //Test for 2 occurances
+    [TestMethod]
+    public void WordCountTotal_CountUserKeyWordInArrayTwo_True()
+    {
+      //Arrange
+      WordCounter newWordCounter = new WordCounter("day", "This day really sux day!");
+      string userKeyWord = newWordCounter.GetUserKeyWord();
+      string userSentence = newWordCounter.GetUserSentence();
+      string[] userArray = newWordCounter.SentenceToArray(userSentence);
+
+      //Act
+      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
+
+      //Assert
+      Assert.AreEqual(2, count);
+    }
   }
 }
