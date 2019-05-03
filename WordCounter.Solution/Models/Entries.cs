@@ -5,70 +5,28 @@ namespace WordCountMachine.Models
 {
   public class WordCounter
   {
-    private string _userKeyWord;
-    private string _originalSentence;
-    private string[] _userSentence;
-    private int _count;
+    public string UserKeyWord { get; set;}
+    public string OriginalSentence { get; set;}
+    public string[] ArraySentence { get; set;}
+    public int Count { get;}
 
     public WordCounter (string userKeyWord, string userSentence)
     {
-      _userKeyWord = userKeyWord.ToLower();
-      _originalSentence = userSentence;
-      _userSentence = userSentence.ToLower().Split(' ', '.', '!', '?');
+      UserKeyWord = userKeyWord.ToLower();
+      OriginalSentence = userSentence;
+      ArraySentence = userSentence.ToLower().Split(' ', '.', '!', '?');
 
       int count = WordCountTotal();
-      _count = count;
+      Count = count;
     }
 
-    public string GetUserKeyWord()
-    {
-      return _userKeyWord;
-    }
-
-    public void SetUserKeyWord(string newUserKeyWord)
-    {
-      _userKeyWord = newUserKeyWord;
-    }
-
-    public string[] GetUserSentence()
-    {
-      return _userSentence;
-    }
-
-    public void SetUserSentence(string[] newUserSentence)
-    {
-      _userSentence = newUserSentence;
-    }
-
-    public string GetOriginalSentence()
-    {
-      return _originalSentence;
-    }
-
-    public void SetOriginalSentence(string newUserSentence)
-    {
-      _originalSentence = newUserSentence;
-    }
-
-    public int GetWordCountTotal()
-    {
-      return _count;
-    }
-
-    // public string[] SentenceToArray(string userSentence)
-    // {
-    //   string lowerCaseSentence = userSentence.ToLower();
-    //   string[] sentenceArray = lowerCaseSentence.Split(' ', '.', '!', '?');
-    //   return sentenceArray;
-    // }
-
-    public int WordCountTotal(string userKeyWord, string[] userArray)
+    public int WordCountTotal(string userKeyWord, string[] arraySentence)
     {
       int count = 0;
 
-      for (int i=0; i<userArray.Length; i++)
+      for (int i=0; i < ArraySentence.Length; i++)
       {
-        if (userKeyWord == userArray[i])
+        if (userKeyWord == ArraySentence[i])
         {
           count += 1;
         }
@@ -77,3 +35,9 @@ namespace WordCountMachine.Models
     }
   }
 }
+// public string[] SentenceToArray(string userSentence)
+// {
+//   string lowerCaseSentence = userSentence.ToLower();
+//   string[] sentenceArray = lowerCaseSentence.Split(' ', '.', '!', '?');
+//   return sentenceArray;
+// }
