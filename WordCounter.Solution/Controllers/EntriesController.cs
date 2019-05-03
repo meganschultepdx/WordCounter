@@ -21,19 +21,19 @@ namespace WordCountMachine.Controllers
     }
 
     [HttpPost("/entries")]
-    public ActionResult Create(string userKeyWord, string[] userSentence)
+    public ActionResult Show(string userKeyWord, string originalSentence)
     {
-      WordCounter newWordCounter = new WordCounter();
+      WordCounter newWordCounter = new WordCounter(userKeyWord, originalSentence);
       newWordCounter.SetUserKeyWord(userKeyWord);
-      newWordCounter.SetUserKeyWord(userSentence);
-      return View(myWordCounter);
+      newWordCounter.SetOriginalSentence(originalSentence);
+      return View(newWordCounter);
     }
 
-    [HttpGet("/entries/show")]
-    public ActionResult Show()
-    {
-      return View();
-    }
+    // [HttpGet("/entries/show")]
+    // public ActionResult Show()
+    // {
+    //   return View();
+    // }
 
   }
 }
