@@ -27,11 +27,5 @@ namespace WordCountMachine.Controllers
       return View(newWordCounter);
     }
 
-    // [HttpGet("/entries/show")]
-    // public ActionResult Show()
-    // {
-    //   return View();
-    // }
-
   }
 }

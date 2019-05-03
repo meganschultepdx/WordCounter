@@ -24,19 +24,17 @@ namespace WordCountMachine.Tests
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
 
-    [TestMethod]
-    public void New_ReturnsCorrectView_True()
-    {
-      //Arrange
-      EntriesController controller = new EntriesController();
-
-      //Act
-      ActionResult newView = controller.New();
-
-      //Assert
-      Assert.IsInstanceOfType(newView, typeof(ViewResult));
-    }
-
-
+    // [TestMethod]
+    // public void New_ReturnsCorrectView_True()
+    // {
+    //   //Arrange
+    //   EntriesController controller = new EntriesController();
+    //
+    //   //Act
+    //   ActionResult newView = controller.New();
+    //
+    //   //Assert
+    //   Assert.IsInstanceOfType(newView, typeof(ViewResult));
+    // }
   }
 }
