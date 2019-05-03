@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Entries</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-  </head>
-  <body class="container">
-@using WordCountMachine.Models
+<head>
+  <meta charset='utf-8'>
+  <title>Word Counter</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='~/css/styles.css'>
+</head>
+<body class="container">
+  @using WordCountMachine.Models
 
-<h1>Check it out!</h1>
+  <h1>Check it out!</h1>
 
-<p>Your word, @Model.UserKeyWord<br>
-appears in your sentence, @Model.OriginalSentence<br>
-@Model.Count times!</p>
+  <p>Your word, @Model.UserKeyWord<br>
+    appears in your sentence, @Model.OriginalSentence<br>
+    @Model.Count times!</p>
 
 
-<p><a href='/entries/new'>Add a New Word and Sentence</a></p>
+    <p><a href='/entries/new'>Add a New Word and Sentence</a></p>
 
-</body>
+  </body>
 </html>
