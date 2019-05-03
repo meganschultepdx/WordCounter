@@ -12,3 +12,6 @@
 /Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.AssemblyInfo.cs
 /Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.dll
 /Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.pdb
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.csprojAssemblyReference.cache
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.AssemblyInfoInputs.cache
+/Users/meganschulte/Desktop/WordCounter/WordCounter.Tests/obj/Debug/netcoreapp1.1.4/WordCounter.Tests.csproj.CopyComplete

@@ -19,7 +19,7 @@ namespace WordCounterTests
     }
 
     [TestMethod]
-    public void GetUserKeyWord_UserKeyWordGet_True()
+    public void GetUserKeyWord_UserKeyWordGet_String()
     {
       //Arrange
       string userKeyWord = "RaD";
@@ -34,15 +34,17 @@ namespace WordCounterTests
 
     [TestMethod]
     public void GetUserSentence_UserSentenceGet_True()
+    public void GetUserSentence_UserSentenceGet_"String"()
     {
       //Arrange
-      string userSentence = "I went to a bookstore.";
-      WordCounter newSentence = new WordCounter("text", userSentence);
+      // string userSentence = "I went to a bookstore.";
+      // WordCounter newSentence = new WordCounter("text", userSentence);
+      WordCounter newSentence = new WordCounter("text", "I went to a bookstore.");
       //Act
       string sentenceResult = newSentence.GetUserSentence();
 
       //Assert
-      Assert.AreEqual(userSentence, sentenceResult);
+      Assert.AreEqual(newSentence, sentenceResult); //still unsure if you put newSentence there, because you can put an array in so? ["I", "went", etc]
     }
 
     [TestMethod]

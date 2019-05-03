@@ -6,12 +6,12 @@ namespace WordCounterModels
   public class WordCounter
   {
     private string _userKeyWord;
-    private string _userSentence;
+    private string[] _userSentence;
 
     public WordCounter (string userKeyWord, string userSentence)
     {
       _userKeyWord = userKeyWord.ToLower();
-      _userSentence = userSentence;
+      _userSentence = userSentence.ToLower().Split(' ', '.', '!', '?');
     }
 
     public string GetUserKeyWord()
@@ -19,17 +19,17 @@ namespace WordCounterModels
       return _userKeyWord;
     }
 
-    public string GetUserSentence()
+    public string[] GetUserSentence()
     {
       return _userSentence;
     }
 
-    public string[] SentenceToArray(string userSentence)
-    {
-      string lowerCaseSentence = userSentence.ToLower();
-      string[] sentenceArray = lowerCaseSentence.Split(' ', '.', '!', '?');
-      return sentenceArray;
-    }
+    // public string[] SentenceToArray(string userSentence)
+    // {
+    //   string lowerCaseSentence = userSentence.ToLower();
+    //   string[] sentenceArray = lowerCaseSentence.Split(' ', '.', '!', '?');
+    //   return sentenceArray;
+    // }
 
     public int WordCountTotal(string userKeyWord, string[] userArray)
     {
