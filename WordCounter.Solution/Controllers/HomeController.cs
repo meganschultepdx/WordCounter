@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace ToDoList.Controllers
+namespace WordCountMachine.Controllers
 {
   public class HomeController : Controller
   {
@@ -10,3 +10,5 @@ namespace ToDoList.Controllers
     {
       return View();
     }
+  }
+}

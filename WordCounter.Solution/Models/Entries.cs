@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace WordCounterModels
+namespace WordCountMachine.Models
 {
   public class WordCounter
   {
@@ -19,9 +19,19 @@ namespace WordCounterModels
       return _userKeyWord;
     }
 
+    public string SetUserKeyWord(string newUserKeyWord)
+    {
+      _userKeyWord = newUserKeyWord;
+    }
+
     public string[] GetUserSentence()
     {
       return _userSentence;
+    }
+
+    public string SetUserSentence(string newUserSentence)
+    {
+      _userSentence = newUserSentence;
     }
 
     // public string[] SentenceToArray(string userSentence)

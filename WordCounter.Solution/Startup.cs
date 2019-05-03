@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WordCounter
+namespace WordCountMachine
 {
   public class Startup
   {
@@ -25,21 +25,19 @@ namespace WordCounter
 
     public void Configure(IApplicationBuilder app)
     {
-      app.UseDeveloperExceptionPage();//this is the debugger for Razor view
       app.UseMvc(routes =>
       {
         routes.MapRoute(
           name: "default",
           template: "{controller=Home}/{action=Index}/{id?}");
-
-          app.UseStaticFiles();
       });
 
-        app.Run(async (context) =>
-        {
-          await context.Response.WriteAsync("Something went wrong!");
-        });
+        app.UseStaticFiles();
 
+      app.Run(async (context) =>
+      {
+        await context.Response.WriteAsync("Something went wrong!");
+      });
     }
   }
 }
