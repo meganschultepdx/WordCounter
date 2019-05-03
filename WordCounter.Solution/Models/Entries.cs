@@ -6,14 +6,18 @@ namespace WordCountMachine.Models
   public class WordCounter
   {
     private string _userKeyWord;
-    private string[] _userSentence;
     private string _originalSentence;
+    private string[] _userSentence;
+    private int _count;
 
     public WordCounter (string userKeyWord, string userSentence)
     {
       _userKeyWord = userKeyWord.ToLower();
-      _userSentence = userSentence.ToLower().Split(' ', '.', '!', '?');
       _originalSentence = userSentence;
+      _userSentence = userSentence.ToLower().Split(' ', '.', '!', '?');
+
+      int count = WordCountTotal();
+      _count = count;
     }
 
     public string GetUserKeyWord()
@@ -44,6 +48,11 @@ namespace WordCountMachine.Models
     public void SetOriginalSentence(string newUserSentence)
     {
       _originalSentence = newUserSentence;
+    }
+
+    public int GetWordCountTotal()
+    {
+      return _count;
     }
 
     // public string[] SentenceToArray(string userSentence)
