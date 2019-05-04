@@ -50,14 +50,13 @@ public void UserSentence_SentenceToLowerArray_True()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This milk really sux!");
-      string userKeyWord = newWordCounter.GetUserKeyWord();
-      string userSentence = newWordCounter.GetUserSentence();
-      string[] arraySentence = newWordCounter.SentenceToArray(userSentence);
+      string userKeyWord = newWordCounter.UserKeyWord;
+      string[] arraySentence = newWordCounter.ArraySentence;
 
       //Act
-      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
+      int count = newWordCounter.WordCountTotal(userKeyWord, arraySentence);
 
-      //Assert
+//Assert
       Assert.AreEqual(0, count);
     }
     //test for one occurance
@@ -66,12 +65,11 @@ public void UserSentence_SentenceToLowerArray_True()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("day", "This day really sux!");
-      string userKeyWord = newWordCounter.GetUserKeyWord();
-      string userSentence = newWordCounter.GetUserSentence();
-      string[] arraySentence = newWordCounter.SentenceToArray(userSentence);
+      string userKeyWord = newWordCounter.UserKeyWord;
+      string[] arraySentence = newWordCounter.ArraySentence;
 
       //Act
-      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
+      int count = newWordCounter.WordCountTotal(userKeyWord, arraySentence);
 
       //Assert
       Assert.AreEqual(1, count);
@@ -81,13 +79,12 @@ public void UserSentence_SentenceToLowerArray_True()
     public void WordCountTotal_CountUserKeyWordInArrayTwo_True()
     {
       //Arrange
-      WordCounter newWordCounter = new WordCounter("day", "This day really sux day!");
-      string userKeyWord = newWordCounter.GetUserKeyWord();
-      string userSentence = newWordCounter.GetUserSentence();
-      string[] userArray = newWordCounter.SentenceToArray(userSentence);
+      WordCounter newWordCounter = new WordCounter("day", "This day really day sux!");
+      string userKeyWord = newWordCounter.UserKeyWord;
+      string[] arraySentence = newWordCounter.ArraySentence;
 
       //Act
-      int count = newWordCounter.WordCountTotal(userKeyWord, userArray);
+      int count = newWordCounter.WordCountTotal(userKeyWord, arraySentence);
 
       //Assert
       Assert.AreEqual(2, count);
