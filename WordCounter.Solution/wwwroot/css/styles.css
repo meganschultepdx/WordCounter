@@ -7,3 +7,8 @@ h1 {
   font-size: 40px;
   color: #D1B911;
 }
+
+#list {
+  margin-left: 15%;
+  text-align: left;
+}
