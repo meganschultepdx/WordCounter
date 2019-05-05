@@ -6,8 +6,13 @@ using WordCountMachine.Models;
 namespace WordCountMachine.Tests
 {
   [TestClass]
-  public class WordCounterTests
+  public class EntriesTests: IDisposable
   {
+    public void Dispose()
+    {
+      Entries.ClearAll();
+    }
+
     [TestMethod]
     public void WordCounter_CreatesInstanceOfItem_True()
     {
