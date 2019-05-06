@@ -6,12 +6,8 @@ using WordCountMachine.Models;
 namespace WordCountMachine.Tests
 {
   [TestClass]
-  public class EntriesTests: IDisposable
+  public class EntriesTests
   {
-    public void Dispose()
-    {
-      Entries.ClearAll();
-    }
 
     [TestMethod]
     public void WordCounter_CreatesInstanceOfItem_True()
@@ -37,17 +33,17 @@ namespace WordCountMachine.Tests
     }
 
     [TestMethod]
-public void UserSentence_SentenceToLowerArray_True()
-{
-  // Arrange
-  WordCounter newUserSentence = new WordCounter("RaD", "I am fine.");
+    public void UserSentence_SentenceToLowerArray_True()
+    {
+      // Arrange
+      WordCounter newUserSentence = new WordCounter("RaD", "I am fine.");
 
-  // Act
-  string[] testGetSentence = newUserSentence.ArraySentence;
+      // Act
+      string[] testGetSentence = newUserSentence.ArraySentence;
 
-  // Assert
-  Assert.AreEqual("fine", testGetSentence[2]);
-}
+      // Assert
+      Assert.AreEqual("fine", testGetSentence[2]);
+    }
 
     //test for 0 occurances
     [TestMethod]
@@ -61,7 +57,7 @@ public void UserSentence_SentenceToLowerArray_True()
       //Act
       int count = newWordCounter.WordCountTotal(userKeyWord, arraySentence);
 
-//Assert
+      //Assert
       Assert.AreEqual(0, count);
     }
     //test for one occurance
